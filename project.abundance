@@ -1092,8 +1092,8 @@
                     "ioValue": 1730490978325
                 },
                 {
-                    "name": "Shape 5",
-                    "ioValue": 1730492101818
+                    "name": "Shape 6",
+                    "ioValue": 1730492452415
                 }
             ],
             "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape",
@@ -1804,7 +1804,7 @@
                     "ioValues": [
                         {
                             "name": "number or geometry",
-                            "ioValue": 1730492077706
+                            "ioValue": 1730492061025
                         }
                     ],
                     "description": "Connect geometry here to make it available in the next level up. "
@@ -1891,7 +1891,7 @@
                                 },
                                 {
                                     "name": "y length",
-                                    "ioValue": 2
+                                    "ioValue": 1
                                 }
                             ],
                             "description": "Creates a new rectangle."
@@ -1899,8 +1899,8 @@
                         {
                             "atomType": "Rectangle",
                             "name": "Rectangle",
-                            "x": 0.1636675235646958,
-                            "y": 0.4314868804664723,
+                            "x": 0.16023993144815768,
+                            "y": 0.45772594752186585,
                             "uniqueID": 1730492061059,
                             "ioValues": [
                                 {
@@ -1909,7 +1909,7 @@
                                 },
                                 {
                                     "name": "y length",
-                                    "ioValue": 2
+                                    "ioValue": 1
                                 }
                             ],
                             "description": "Creates a new rectangle."
@@ -2078,8 +2078,8 @@
                         {
                             "atomType": "Rectangle",
                             "name": "Rectangle",
-                            "x": 0.22193658954584403,
-                            "y": 0.7463556851311953,
+                            "x": 0.22279348757497858,
+                            "y": 0.760932944606414,
                             "uniqueID": 1730492061521,
                             "ioValues": [
                                 {
@@ -2088,7 +2088,7 @@
                                 },
                                 {
                                     "name": "y length",
-                                    "ioValue": 1.5
+                                    "ioValue": 0.5
                                 }
                             ],
                             "description": "Creates a new rectangle."
@@ -2324,36 +2324,14 @@
                     ],
                     "fileTypeVersion": 1,
                     "compiledBom": []
-                },
-                {
-                    "atomType": "Join",
-                    "name": "Assembly",
-                    "x": 0.7232219365895458,
-                    "y": 0.43731778425655976,
-                    "uniqueID": 1730492077706,
-                    "ioValues": [
-                        {
-                            "name": "Shape 1",
-                            "ioValue": 1730492061025
-                        }
-                    ],
-                    "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape",
-                    "unionType": "Assembly"
                 }
             ],
             "allConnectors": [
                 {
                     "ap1Name": "Geometry",
-                    "ap2Name": "Shape 1",
-                    "ap2Primary": false,
-                    "ap1ID": 1730492061025,
-                    "ap2ID": 1730492077706
-                },
-                {
-                    "ap1Name": "geometry",
                     "ap2Name": "number or geometry",
                     "ap2Primary": false,
-                    "ap1ID": 1730492077706,
+                    "ap1ID": 1730492061025,
                     "ap2ID": 1730492058303
                 }
             ],
@@ -2363,8 +2341,8 @@
         {
             "atomType": "Move",
             "name": "Move",
-            "x": 0.506426735218509,
-            "y": 0.8279883381924198,
+            "x": 0.5055698371893744,
+            "y": 0.8367346938775511,
             "uniqueID": 1730492101818,
             "ioValues": [
                 {
@@ -2381,10 +2359,36 @@
                 },
                 {
                     "name": "zDist",
-                    "ioValue": 0
+                    "ioValue": 30
                 }
             ],
             "description": "Moves a shape laterally in X, Y, Z."
+        },
+        {
+            "atomType": "Rotate",
+            "name": "Rotate",
+            "x": 0.6418166238217652,
+            "y": 0.8279883381924198,
+            "uniqueID": 1730492452415,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": 1730492101818
+                },
+                {
+                    "name": "x-axis degrees",
+                    "ioValue": 90
+                },
+                {
+                    "name": "y-axis degrees",
+                    "ioValue": 0
+                },
+                {
+                    "name": "z-axis degrees",
+                    "ioValue": 0
+                }
+            ],
+            "description": "Rotates the input geometry around the X, Y, or Z axis. Inputs are degrees."
         }
     ],
     "allConnectors": [
@@ -2453,9 +2457,16 @@
         },
         {
             "ap1Name": "geometry",
-            "ap2Name": "Shape 5",
-            "ap2Primary": false,
+            "ap2Name": "geometry",
+            "ap2Primary": true,
             "ap1ID": 1730492101818,
+            "ap2ID": 1730492452415
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "Shape 6",
+            "ap2Primary": false,
+            "ap1ID": 1730492452415,
             "ap2ID": 1730472292197
         }
     ],
