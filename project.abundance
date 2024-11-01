@@ -38,8 +38,8 @@
         {
             "atomType": "Molecule",
             "name": "back side leg",
-            "x": 0.2654774396642183,
-            "y": 0.3206997084548105,
+            "x": 0.2675760755508919,
+            "y": 0.33527696793002915,
             "uniqueID": 1730469146402,
             "ioValues": [
                 {
@@ -347,8 +347,8 @@
                 {
                     "atomType": "Extrude",
                     "name": "Extrude",
-                    "x": 0.7166841552990556,
-                    "y": 0.3848396501457726,
+                    "x": 0.6998950682056663,
+                    "y": 0.30903790087463556,
                     "uniqueID": 1730470235729,
                     "ioValues": [
                         {
@@ -374,8 +374,8 @@
                 {
                     "atomType": "Tag",
                     "name": "cutLayout,",
-                    "x": 0.825813221406086,
-                    "y": 0.23323615160349856,
+                    "x": 0.7974816369359916,
+                    "y": 0.18367346938775508,
                     "uniqueID": 1730470440772,
                     "ioValues": [
                         {
@@ -393,8 +393,8 @@
                 {
                     "atomType": "Join",
                     "name": "Assembly",
-                    "x": 0.856243441762854,
-                    "y": 0.47230320699708456,
+                    "x": 0.8593913955928646,
+                    "y": 0.37317784256559766,
                     "uniqueID": 1730470456364,
                     "ioValues": [
                         {
@@ -402,12 +402,12 @@
                             "ioValue": 1730470440772
                         },
                         {
-                            "name": "Shape 6",
-                            "ioValue": 1730471126290
+                            "name": "Shape 8",
+                            "ioValue": 1730471801207
                         },
                         {
-                            "name": "Shape 7",
-                            "ioValue": 1730471122658
+                            "name": "Shape 9",
+                            "ioValue": 1730471790972
                         }
                     ],
                     "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape",
@@ -416,8 +416,8 @@
                 {
                     "atomType": "Move",
                     "name": "Move",
-                    "x": 0.9034627492130115,
-                    "y": 0.7492711370262392,
+                    "x": 0.9076600209863589,
+                    "y": 0.7346938775510203,
                     "uniqueID": 1730470480508,
                     "ioValues": [
                         {
@@ -426,11 +426,11 @@
                         },
                         {
                             "name": "xDist",
-                            "ioValue": 0
+                            "ioValue": -11
                         },
                         {
                             "name": "yDist",
-                            "ioValue": 0
+                            "ioValue": 6
                         },
                         {
                             "name": "zDist",
@@ -442,8 +442,8 @@
                 {
                     "atomType": "Rectangle",
                     "name": "Rectangle",
-                    "x": 0.16474291710388247,
-                    "y": 0.7755102040816326,
+                    "x": 0.16369359916054566,
+                    "y": 0.7871720116618076,
                     "uniqueID": 1730470499591,
                     "ioValues": [
                         {
@@ -582,8 +582,8 @@
                 {
                     "atomType": "Extrude",
                     "name": "Extrude",
-                    "x": 0.6411332633788038,
-                    "y": 0.5218658892128281,
+                    "x": 0.6232948583420777,
+                    "y": 0.4431486880466472,
                     "uniqueID": 1730471122658,
                     "ioValues": [
                         {
@@ -600,8 +600,8 @@
                 {
                     "atomType": "Extrude",
                     "name": "Extrude",
-                    "x": 0.5981112277019937,
-                    "y": 0.9183673469387756,
+                    "x": 0.6537250786988458,
+                    "y": 0.8804664723032071,
                     "uniqueID": 1730471126290,
                     "ioValues": [
                         {
@@ -677,9 +677,9 @@
                 },
                 {
                     "atomType": "Tag",
-                    "name": ",cutLayout",
-                    "x": 0.7806925498426023,
-                    "y": 0.80466472303207,
+                    "name": "cutLayout,",
+                    "x": 0.7649527806925498,
+                    "y": 0.6588921282798834,
                     "uniqueID": 1730471790972,
                     "ioValues": [
                         {
@@ -689,10 +689,48 @@
                     ],
                     "description": "Tags geometry so that it can be extracted later.",
                     "tags": [
-                        "",
-                        "cutLayout"
+                        "cutLayout",
+                        ""
                     ],
                     "cutTag": true
+                },
+                {
+                    "atomType": "Tag",
+                    "name": "cutLayout,",
+                    "x": 0.7030430220356768,
+                    "y": 0.4927113702623907,
+                    "uniqueID": 1730471801207,
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": 1730471122658
+                        }
+                    ],
+                    "description": "Tags geometry so that it can be extracted later.",
+                    "tags": [
+                        "cutLayout",
+                        ""
+                    ],
+                    "cutTag": true
+                },
+                {
+                    "atomType": "Equation",
+                    "name": "x + y",
+                    "x": 0.782791185729276,
+                    "y": 0.8571428571428571,
+                    "uniqueID": 1730472094406,
+                    "ioValues": [
+                        {
+                            "name": "x",
+                            "ioValue": 1
+                        },
+                        {
+                            "name": "y",
+                            "ioValue": 1
+                        }
+                    ],
+                    "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
+                    "currentEquation": "x + y"
                 }
             ],
             "allConnectors": [
@@ -880,17 +918,10 @@
                 },
                 {
                     "ap1Name": "geometry",
-                    "ap2Name": "Shape 7",
-                    "ap2Primary": false,
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
                     "ap1ID": 1730471122658,
-                    "ap2ID": 1730470456364
-                },
-                {
-                    "ap1Name": "geometry",
-                    "ap2Name": "Shape 6",
-                    "ap2Primary": false,
-                    "ap1ID": 1730471126290,
-                    "ap2ID": 1730470456364
+                    "ap2ID": 1730471801207
                 },
                 {
                     "ap1Name": "geometry",
@@ -912,6 +943,20 @@
                     "ap2Primary": true,
                     "ap1ID": 1730471268316,
                     "ap2ID": 1730471122658
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "Shape 9",
+                    "ap2Primary": false,
+                    "ap1ID": 1730471790972,
+                    "ap2ID": 1730470456364
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "Shape 8",
+                    "ap2Primary": false,
+                    "ap1ID": 1730471801207,
+                    "ap2ID": 1730470456364
                 }
             ],
             "fileTypeVersion": 1,
