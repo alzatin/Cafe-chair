@@ -67,23 +67,104 @@
                 {
                     "atomType": "Rectangle",
                     "name": "Rectangle",
-                    "x": 0.28751311647429173,
-                    "y": 0.4839650145772595,
+                    "x": 0.19727177334732424,
+                    "y": 0.3177842565597668,
                     "uniqueID": 1730469333032,
                     "ioValues": [
                         {
                             "name": "x length",
-                            "ioValue": 10
+                            "ioValue": 23
                         },
                         {
                             "name": "y length",
-                            "ioValue": 10
+                            "ioValue": 3
                         }
                     ],
                     "description": "Creates a new rectangle."
+                },
+                {
+                    "atomType": "Circle",
+                    "name": "Circle",
+                    "x": 0.25918153200419725,
+                    "y": 0.6384839650145773,
+                    "uniqueID": 1730469449671,
+                    "ioValues": [
+                        {
+                            "name": "diameter",
+                            "ioValue": 4
+                        }
+                    ],
+                    "description": "Creates a new circle."
+                },
+                {
+                    "atomType": "Move",
+                    "name": "Move",
+                    "x": 0.4144805876180483,
+                    "y": 0.37609329446064144,
+                    "uniqueID": 1730469467869,
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": 1730469333032
+                        },
+                        {
+                            "name": "xDist",
+                            "ioValue": 0
+                        },
+                        {
+                            "name": "yDist",
+                            "ioValue": 0
+                        },
+                        {
+                            "name": "zDist",
+                            "ioValue": 0
+                        }
+                    ],
+                    "description": "Moves a shape laterally in X, Y, Z."
+                },
+                {
+                    "atomType": "Rotate",
+                    "name": "Rotate",
+                    "x": 0.6044071353620147,
+                    "y": 0.47521865889212833,
+                    "uniqueID": 1730469478467,
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": 1730469467869
+                        },
+                        {
+                            "name": "x-axis degrees",
+                            "ioValue": 0
+                        },
+                        {
+                            "name": "y-axis degrees",
+                            "ioValue": 0
+                        },
+                        {
+                            "name": "z-axis degrees",
+                            "ioValue": 9
+                        }
+                    ],
+                    "description": "Rotates the input geometry around the X, Y, or Z axis. Inputs are degrees."
                 }
             ],
-            "allConnectors": [],
+            "allConnectors": [
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
+                    "ap1ID": 1730469333032,
+                    "ap2ID": 1730469467869
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
+                    "ap1ID": 1730469467869,
+                    "ap2ID": 1730469478467
+                }
+            ],
             "fileTypeVersion": 1,
             "compiledBom": {}
         }
