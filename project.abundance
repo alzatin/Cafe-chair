@@ -268,8 +268,8 @@
                 {
                     "atomType": "Rotate",
                     "name": "Rotate",
-                    "x": 0.385099685204617,
-                    "y": 0.5597667638483965,
+                    "x": 0.3809024134312696,
+                    "y": 0.565597667638484,
                     "uniqueID": 1730469931076,
                     "ioValues": [
                         {
@@ -434,7 +434,7 @@
                 {
                     "atomType": "Rectangle",
                     "name": "Rectangle",
-                    "x": 0.21825813221406087,
+                    "x": 0.16474291710388247,
                     "y": 0.7696793002915452,
                     "uniqueID": 1730470499591,
                     "ioValues": [
@@ -452,8 +452,8 @@
                 {
                     "atomType": "Rotate",
                     "name": "Rotate",
-                    "x": 0.4029380902413431,
-                    "y": 0.7463556851311953,
+                    "x": 0.32948583420776495,
+                    "y": 0.6909620991253644,
                     "uniqueID": 1730470520318,
                     "ioValues": [
                         {
@@ -478,8 +478,8 @@
                 {
                     "atomType": "Move",
                     "name": "Move",
-                    "x": 0.5267576075550892,
-                    "y": 0.7113702623906705,
+                    "x": 0.5309548793284365,
+                    "y": 0.6122448979591837,
                     "uniqueID": 1730470535719,
                     "ioValues": [
                         {
@@ -493,6 +493,76 @@
                         {
                             "name": "yDist",
                             "ioValue": 20
+                        },
+                        {
+                            "name": "zDist",
+                            "ioValue": 0
+                        }
+                    ],
+                    "description": "Moves a shape laterally in X, Y, Z."
+                },
+                {
+                    "atomType": "Rectangle",
+                    "name": "Rectangle",
+                    "x": 0.3147953830010493,
+                    "y": 0.868804664723032,
+                    "uniqueID": 1730470701693,
+                    "ioValues": [
+                        {
+                            "name": "x length",
+                            "ioValue": 18
+                        },
+                        {
+                            "name": "y length",
+                            "ioValue": 4
+                        }
+                    ],
+                    "description": "Creates a new rectangle."
+                },
+                {
+                    "atomType": "Rotate",
+                    "name": "Rotate",
+                    "x": 0.45540398740818466,
+                    "y": 0.8775510204081632,
+                    "uniqueID": 1730470705850,
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": 1730470701693
+                        },
+                        {
+                            "name": "x-axis degrees",
+                            "ioValue": 0
+                        },
+                        {
+                            "name": "y-axis degrees",
+                            "ioValue": 0
+                        },
+                        {
+                            "name": "z-axis degrees",
+                            "ioValue": 90
+                        }
+                    ],
+                    "description": "Rotates the input geometry around the X, Y, or Z axis. Inputs are degrees."
+                },
+                {
+                    "atomType": "Move",
+                    "name": "Move",
+                    "x": 0.6002098635886673,
+                    "y": 0.8192419825072886,
+                    "uniqueID": 1730470732762,
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": 1730470705850
+                        },
+                        {
+                            "name": "xDist",
+                            "ioValue": -9
+                        },
+                        {
+                            "name": "yDist",
+                            "ioValue": 10
                         },
                         {
                             "name": "zDist",
@@ -635,6 +705,20 @@
                     "ap2Primary": true,
                     "ap1ID": 1730470520318,
                     "ap2ID": 1730470535719
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
+                    "ap1ID": 1730470701693,
+                    "ap2ID": 1730470705850
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
+                    "ap1ID": 1730470705850,
+                    "ap2ID": 1730470732762
                 }
             ],
             "fileTypeVersion": 1,
