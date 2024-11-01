@@ -38,8 +38,8 @@
         {
             "atomType": "Molecule",
             "name": "back side leg",
-            "x": 0.2675760755508919,
-            "y": 0.33527696793002915,
+            "x": 0.24134312696747115,
+            "y": 0.20991253644314867,
             "uniqueID": 1730469146402,
             "ioValues": [
                 {
@@ -63,7 +63,7 @@
                     "ioValues": [
                         {
                             "name": "number or geometry",
-                            "ioValue": 1730470480508
+                            "ioValue": 1730472224195
                         }
                     ],
                     "description": "Connect geometry here to make it available in the next level up. "
@@ -347,8 +347,8 @@
                 {
                     "atomType": "Extrude",
                     "name": "Extrude",
-                    "x": 0.6998950682056663,
-                    "y": 0.30903790087463556,
+                    "x": 0.7051416579223505,
+                    "y": 0.30612244897959184,
                     "uniqueID": 1730470235729,
                     "ioValues": [
                         {
@@ -416,8 +416,8 @@
                 {
                     "atomType": "Move",
                     "name": "Move",
-                    "x": 0.9076600209863589,
-                    "y": 0.7346938775510203,
+                    "x": 0.8593913955928646,
+                    "y": 0.565597667638484,
                     "uniqueID": 1730470480508,
                     "ioValues": [
                         {
@@ -610,7 +610,7 @@
                         },
                         {
                             "name": "height",
-                            "ioValue": 0.75
+                            "ioValue": 0.375
                         }
                     ],
                     "description": "Extrudes a 2D shape. Input can be negitive. "
@@ -715,22 +715,44 @@
                 },
                 {
                     "atomType": "Equation",
-                    "name": "x + y",
-                    "x": 0.782791185729276,
-                    "y": 0.8571428571428571,
+                    "name": "x/2",
+                    "x": 0.49108079748163697,
+                    "y": 0.8017492711370262,
                     "uniqueID": 1730472094406,
                     "ioValues": [
                         {
                             "name": "x",
-                            "ioValue": 1
-                        },
-                        {
-                            "name": "y",
-                            "ioValue": 1
+                            "ioValue": 0.75
                         }
                     ],
                     "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
-                    "currentEquation": "x + y"
+                    "currentEquation": "x/2"
+                },
+                {
+                    "atomType": "Rotate",
+                    "name": "Rotate",
+                    "x": 0.888772298006296,
+                    "y": 0.8571428571428571,
+                    "uniqueID": 1730472224195,
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": 1730470480508
+                        },
+                        {
+                            "name": "x-axis degrees",
+                            "ioValue": 0
+                        },
+                        {
+                            "name": "y-axis degrees",
+                            "ioValue": 90
+                        },
+                        {
+                            "name": "z-axis degrees",
+                            "ioValue": 0
+                        }
+                    ],
+                    "description": "Rotates the input geometry around the X, Y, or Z axis. Inputs are degrees."
                 }
             ],
             "allConnectors": [
@@ -848,10 +870,10 @@
                 },
                 {
                     "ap1Name": "number or geometry",
-                    "ap2Name": "height",
+                    "ap2Name": "x",
                     "ap2Primary": false,
                     "ap1ID": 1730470243608,
-                    "ap2ID": 1730471126290
+                    "ap2ID": 1730472094406
                 },
                 {
                     "ap1Name": "geometry",
@@ -869,10 +891,10 @@
                 },
                 {
                     "ap1Name": "geometry",
-                    "ap2Name": "number or geometry",
-                    "ap2Primary": false,
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
                     "ap1ID": 1730470480508,
-                    "ap2ID": 1730469147084
+                    "ap2ID": 1730472224195
                 },
                 {
                     "ap1Name": "geometry",
@@ -957,6 +979,20 @@
                     "ap2Primary": false,
                     "ap1ID": 1730471801207,
                     "ap2ID": 1730470456364
+                },
+                {
+                    "ap1Name": "result",
+                    "ap2Name": "height",
+                    "ap2Primary": false,
+                    "ap1ID": 1730472094406,
+                    "ap2ID": 1730471126290
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "number or geometry",
+                    "ap2Primary": false,
+                    "ap1ID": 1730472224195,
+                    "ap2ID": 1730469147084
                 }
             ],
             "fileTypeVersion": 1,
@@ -970,15 +1006,122 @@
             "uniqueID": 1730470361606,
             "ioValues": [],
             "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable"
+        },
+        {
+            "atomType": "Move",
+            "name": "Move",
+            "x": 0.43126967471143757,
+            "y": 0.47813411078717205,
+            "uniqueID": 1730472281297,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": 1730469146402
+                },
+                {
+                    "name": "xDist",
+                    "ioValue": 20
+                },
+                {
+                    "name": "yDist",
+                    "ioValue": 0
+                },
+                {
+                    "name": "zDist",
+                    "ioValue": 0
+                }
+            ],
+            "description": "Moves a shape laterally in X, Y, Z."
+        },
+        {
+            "atomType": "Join",
+            "name": "Assembly",
+            "x": 0.6789087093389297,
+            "y": 0.3965014577259475,
+            "uniqueID": 1730472292197,
+            "ioValues": [
+                {
+                    "name": "Shape 1",
+                    "ioValue": 1730472281297
+                },
+                {
+                    "name": "Shape 2",
+                    "ioValue": 1730469146402
+                }
+            ],
+            "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape",
+            "unionType": "Assembly"
+        },
+        {
+            "atomType": "CutLayout",
+            "name": "Cut Layout",
+            "x": 0.8058761804826862,
+            "y": 0.2653061224489796,
+            "uniqueID": 1730472340021,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": 1730472292197
+                },
+                {
+                    "name": "Material Thickness",
+                    "ioValue": 0.75
+                },
+                {
+                    "name": "Sheet Width",
+                    "ioValue": 96
+                },
+                {
+                    "name": "Sheet Height",
+                    "ioValue": 48
+                },
+                {
+                    "name": "Part Padding",
+                    "ioValue": 0.25
+                },
+                {
+                    "name": "Sheet Padding",
+                    "ioValue": 3
+                }
+            ],
+            "description": "Extracts all parts tagged for cutting and lays them out on a sheet to cut."
         }
     ],
     "allConnectors": [
+        {
+            "ap1Name": "Geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 1730469146402,
+            "ap2ID": 1730472281297
+        },
+        {
+            "ap1Name": "Geometry",
+            "ap2Name": "Shape 2",
+            "ap2Primary": false,
+            "ap1ID": 1730469146402,
+            "ap2ID": 1730472292197
+        },
         {
             "ap1Name": "number or geometry",
             "ap2Name": "wood thick",
             "ap2Primary": false,
             "ap1ID": 1730470361606,
             "ap2ID": 1730469146402
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "Shape 1",
+            "ap2Primary": false,
+            "ap1ID": 1730472281297,
+            "ap2ID": 1730472292197
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": false,
+            "ap1ID": 1730472292197,
+            "ap2ID": 1730472340021
         }
     ],
     "unitsKey": "Inches",
