@@ -23,7 +23,12 @@
             "x": 0.98,
             "y": 0.5,
             "uniqueID": 1730469095866,
-            "ioValues": [],
+            "ioValues": [
+                {
+                    "name": "number or geometry",
+                    "ioValue": 1730472292197
+                }
+            ],
             "description": "Connect geometry here to make it available in the next level up. "
         },
         {
@@ -618,8 +623,8 @@
                 {
                     "atomType": "Move",
                     "name": "Move",
-                    "x": 0.5498426023084995,
-                    "y": 0.7259475218658892,
+                    "x": 0.5441302485004285,
+                    "y": 0.7026239067055393,
                     "uniqueID": 1730471256915,
                     "ioValues": [
                         {
@@ -1020,7 +1025,7 @@
                 },
                 {
                     "name": "xDist",
-                    "ioValue": 20
+                    "ioValue": 16
                 },
                 {
                     "name": "yDist",
@@ -1036,8 +1041,8 @@
         {
             "atomType": "Join",
             "name": "Assembly",
-            "x": 0.6863753213367609,
-            "y": 0.45772594752186585,
+            "x": 0.6872322193658955,
+            "y": 0.45481049562682213,
             "uniqueID": 1730472292197,
             "ioValues": [
                 {
@@ -1710,8 +1715,8 @@
         {
             "atomType": "Move",
             "name": "Move",
-            "x": 0.508140531276778,
-            "y": 0.6967930029154519,
+            "x": 0.519280205655527,
+            "y": 0.7405247813411079,
             "uniqueID": 1730490978325,
             "ioValues": [
                 {
@@ -1720,15 +1725,15 @@
                 },
                 {
                     "name": "xDist",
-                    "ioValue": 0
+                    "ioValue": 8
                 },
                 {
                     "name": "yDist",
-                    "ioValue": 0
+                    "ioValue": 13
                 },
                 {
                     "name": "zDist",
-                    "ioValue": 0
+                    "ioValue": 21
                 }
             ],
             "description": "Moves a shape laterally in X, Y, Z."
@@ -1771,6 +1776,13 @@
             "ap2ID": 1730472340021
         },
         {
+            "ap1Name": "geometry",
+            "ap2Name": "number or geometry",
+            "ap2Primary": false,
+            "ap1ID": 1730472292197,
+            "ap2ID": 1730469095866
+        },
+        {
             "ap1Name": "Geometry",
             "ap2Name": "geometry",
             "ap2Primary": true,
@@ -1787,6 +1799,6 @@
     ],
     "unitsKey": "Inches",
     "fileTypeVersion": 1,
-    "compiledBom": {},
+    "compiledBom": [],
     "filetypeVersion": 1
 }
