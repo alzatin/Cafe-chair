@@ -2159,7 +2159,12 @@
                     "x": 0.98,
                     "y": 0.5,
                     "uniqueID": 1730492058303,
-                    "ioValues": [],
+                    "ioValues": [
+                        {
+                            "name": "number or geometry",
+                            "ioValue": 1730751385720
+                        }
+                    ],
                     "description": "Connect geometry here to make it available in the next level up. "
                 },
                 {
@@ -2681,8 +2686,8 @@
                 {
                     "atomType": "GitHubMolecule",
                     "name": "Rounded-rectangle-",
-                    "x": 0.22536418166238217,
-                    "y": 0.4927113702623907,
+                    "x": 0.19280205655526994,
+                    "y": 0.47521865889212833,
                     "uniqueID": 1730751142638,
                     "ioValues": [
                         {
@@ -2834,8 +2839,8 @@
                             "ioValue": 1730492061025
                         },
                         {
-                            "name": "Shape 5",
-                            "ioValue": 1730751544112
+                            "name": "Shape 6",
+                            "ioValue": 1730751633661
                         }
                     ],
                     "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape",
@@ -2849,11 +2854,11 @@
                     "uniqueID": 1730751437509,
                     "ioValues": [
                         {
-                            "name": "Shape 3",
-                            "ioValue": 1730751491231
+                            "name": "Shape 5",
+                            "ioValue": 1730751662778
                         },
                         {
-                            "name": "Shape 4",
+                            "name": "Shape 8",
                             "ioValue": 1730751533886
                         }
                     ],
@@ -2863,13 +2868,13 @@
                 {
                     "atomType": "Rotate",
                     "name": "Rotate",
-                    "x": 0.3744644387317909,
-                    "y": 0.7492711370262392,
+                    "x": 0.466152527849186,
+                    "y": 0.7725947521865889,
                     "uniqueID": 1730751473384,
                     "ioValues": [
                         {
                             "name": "geometry",
-                            "ioValue": 1730751491231
+                            "ioValue": 1730751662778
                         },
                         {
                             "name": "x-axis degrees",
@@ -2877,7 +2882,7 @@
                         },
                         {
                             "name": "y-axis degrees",
-                            "ioValue": 10
+                            "ioValue": 7
                         },
                         {
                             "name": "z-axis degrees",
@@ -2907,8 +2912,8 @@
                 {
                     "atomType": "Move",
                     "name": "Move",
-                    "x": 0.48500428449014565,
-                    "y": 0.80466472303207,
+                    "x": 0.570694087403599,
+                    "y": 0.7492711370262392,
                     "uniqueID": 1730751533886,
                     "ioValues": [
                         {
@@ -2925,7 +2930,7 @@
                         },
                         {
                             "name": "zDist",
-                            "ioValue": 0.5
+                            "ioValue": 0.25
                         }
                     ],
                     "description": "Moves a shape laterally in X, Y, Z."
@@ -2959,12 +2964,43 @@
                 {
                     "atomType": "Color",
                     "name": "Color",
-                    "x": 0.8337617823479007,
-                    "y": 0.7317784256559767,
+                    "x": 0.8363324764353043,
+                    "y": 0.7376093294460642,
                     "uniqueID": 1730751633661,
-                    "ioValues": [],
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": 1730751544112
+                        }
+                    ],
                     "description": "Changes the color of the shape.",
-                    "selectedColorIndex": 0
+                    "selectedColorIndex": 3
+                },
+                {
+                    "atomType": "Move",
+                    "name": "Move",
+                    "x": 0.5115681233933163,
+                    "y": 0.4314868804664723,
+                    "uniqueID": 1730751662778,
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": 1730751491231
+                        },
+                        {
+                            "name": "xDist",
+                            "ioValue": 0
+                        },
+                        {
+                            "name": "yDist",
+                            "ioValue": 0
+                        },
+                        {
+                            "name": "zDist",
+                            "ioValue": 0.25
+                        }
+                    ],
+                    "description": "Moves a shape laterally in X, Y, Z."
                 }
             ],
             "allConnectors": [
@@ -2991,6 +3027,13 @@
                 },
                 {
                     "ap1Name": "geometry",
+                    "ap2Name": "number or geometry",
+                    "ap2Primary": false,
+                    "ap1ID": 1730751385720,
+                    "ap2ID": 1730492058303
+                },
+                {
+                    "ap1Name": "geometry",
                     "ap2Name": "geometry",
                     "ap2Primary": true,
                     "ap1ID": 1730751437509,
@@ -3005,33 +3048,46 @@
                 },
                 {
                     "ap1Name": "geometry",
-                    "ap2Name": "Shape 3",
-                    "ap2Primary": false,
-                    "ap1ID": 1730751491231,
-                    "ap2ID": 1730751437509
-                },
-                {
-                    "ap1Name": "geometry",
                     "ap2Name": "geometry",
                     "ap2Primary": true,
                     "ap1ID": 1730751491231,
-                    "ap2ID": 1730751473384
+                    "ap2ID": 1730751662778
                 },
                 {
                     "ap1Name": "geometry",
-                    "ap2Name": "Shape 4",
+                    "ap2Name": "Shape 8",
                     "ap2Primary": false,
                     "ap1ID": 1730751533886,
                     "ap2ID": 1730751437509
                 },
                 {
                     "ap1Name": "geometry",
-                    "ap2Name": "Shape 5",
-                    "ap2Primary": false,
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
                     "ap1ID": 1730751544112,
+                    "ap2ID": 1730751633661
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "Shape 6",
+                    "ap2Primary": false,
+                    "ap1ID": 1730751633661,
                     "ap2ID": 1730751385720
                 },
-                null
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "Shape 5",
+                    "ap2Primary": false,
+                    "ap1ID": 1730751662778,
+                    "ap2ID": 1730751437509
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
+                    "ap1ID": 1730751662778,
+                    "ap2ID": 1730751473384
+                }
             ],
             "fileTypeVersion": 1,
             "compiledBom": []
