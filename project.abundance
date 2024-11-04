@@ -12,6 +12,10 @@
         {
             "name": "wood thick",
             "ioValue": 0.75
+        },
+        {
+            "name": "seat width",
+            "ioValue": 15
         }
     ],
     "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -1128,8 +1132,8 @@
         {
             "atomType": "Move",
             "name": "Move",
-            "x": 0.43126967471143757,
-            "y": 0.47813411078717205,
+            "x": 0.43616109682947724,
+            "y": 0.4081632653061224,
             "uniqueID": 1730472281297,
             "ioValues": [
                 {
@@ -1138,7 +1142,7 @@
                 },
                 {
                     "name": "xDist",
-                    "ioValue": 16
+                    "ioValue": 15.365
                 },
                 {
                     "name": "yDist",
@@ -1215,8 +1219,8 @@
         {
             "atomType": "Molecule",
             "name": "seat ",
-            "x": 0.2416452442159383,
-            "y": 0.5451895043731778,
+            "x": 0.2356469580119966,
+            "y": 0.5568513119533528,
             "uniqueID": 1730472451612,
             "ioValues": [
                 {
@@ -1226,6 +1230,10 @@
                 {
                     "name": "wood thick",
                     "ioValue": 0.75
+                },
+                {
+                    "name": "seat width",
+                    "ioValue": 15
                 }
             ],
             "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -1266,8 +1274,8 @@
                 {
                     "atomType": "Molecule",
                     "name": "base seat",
-                    "x": 0.2356469580119966,
-                    "y": 0.2886297376093295,
+                    "x": 0.23479005998286204,
+                    "y": 0.29737609329446063,
                     "uniqueID": 1730490439040,
                     "ioValues": [
                         {
@@ -1277,6 +1285,10 @@
                         {
                             "name": "wood thick",
                             "ioValue": 0.75
+                        },
+                        {
+                            "name": "seat width",
+                            "ioValue": 15
                         }
                     ],
                     "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -1317,8 +1329,8 @@
                         {
                             "atomType": "Rectangle",
                             "name": "Rectangle",
-                            "x": 0.24307450157397692,
-                            "y": 0.2998542274052478,
+                            "x": 0.2416452442159383,
+                            "y": 0.2944606413994169,
                             "uniqueID": 1730490445911,
                             "ioValues": [
                                 {
@@ -1335,8 +1347,8 @@
                         {
                             "atomType": "Rectangle",
                             "name": "Rectangle",
-                            "x": 0.1636675235646958,
-                            "y": 0.4314868804664723,
+                            "x": 0.15252784918594686,
+                            "y": 0.4227405247813411,
                             "uniqueID": 1730490446558,
                             "ioValues": [
                                 {
@@ -1624,6 +1636,15 @@
                                 }
                             ],
                             "description": "Rotates the input geometry around the X, Y, or Z axis. Inputs are degrees."
+                        },
+                        {
+                            "atomType": "Input",
+                            "name": "seat width",
+                            "x": 0.04,
+                            "y": 0.8192419825072886,
+                            "uniqueID": 1730748530863,
+                            "ioValues": [],
+                            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable"
                         }
                     ],
                     "allConnectors": [
@@ -1738,6 +1759,13 @@
                             "ap2Primary": false,
                             "ap1ID": 1730490933581,
                             "ap2ID": 1730490438723
+                        },
+                        {
+                            "ap1Name": "number or geometry",
+                            "ap2Name": "x length",
+                            "ap2Primary": false,
+                            "ap1ID": 1730748530863,
+                            "ap2ID": 1730490446558
                         }
                     ],
                     "fileTypeVersion": 1,
@@ -1787,6 +1815,15 @@
                         }
                     ],
                     "description": "Moves a shape laterally in X, Y, Z."
+                },
+                {
+                    "atomType": "Input",
+                    "name": "seat width",
+                    "x": 0.04,
+                    "y": 0.8309037900874636,
+                    "uniqueID": 1730748556027,
+                    "ioValues": [],
+                    "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable"
                 }
             ],
             "allConnectors": [
@@ -1824,6 +1861,13 @@
                     "ap2Primary": false,
                     "ap1ID": 1730490900298,
                     "ap2ID": 1730490859945
+                },
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "seat width",
+                    "ap2Primary": false,
+                    "ap1ID": 1730748556027,
+                    "ap2ID": 1730490439040
                 }
             ],
             "fileTypeVersion": 1,
@@ -2468,6 +2512,34 @@
                 }
             ],
             "description": "Rotates the input geometry around the X, Y, or Z axis. Inputs are degrees."
+        },
+        {
+            "atomType": "Input",
+            "name": "seat width",
+            "x": 0.04,
+            "y": 0.7900874635568513,
+            "uniqueID": 1730748582525,
+            "ioValues": [],
+            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable"
+        },
+        {
+            "atomType": "Equation",
+            "name": "x + y/2 -.01",
+            "x": 0.26049700085689803,
+            "y": 0.4227405247813411,
+            "uniqueID": 1730748650795,
+            "ioValues": [
+                {
+                    "name": "x",
+                    "ioValue": 15
+                },
+                {
+                    "name": "y",
+                    "ioValue": 0.75
+                }
+            ],
+            "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
+            "currentEquation": "x + y/2 -.01"
         }
     ],
     "allConnectors": [
@@ -2491,6 +2563,13 @@
             "ap2Primary": false,
             "ap1ID": 1730470361606,
             "ap2ID": 1730469146402
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "y",
+            "ap2Primary": false,
+            "ap1ID": 1730470361606,
+            "ap2ID": 1730748650795
         },
         {
             "ap1Name": "geometry",
@@ -2547,6 +2626,27 @@
             "ap2Primary": true,
             "ap1ID": 1730492452415,
             "ap2ID": 1730492101818
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "seat width",
+            "ap2Primary": false,
+            "ap1ID": 1730748582525,
+            "ap2ID": 1730472451612
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "x",
+            "ap2Primary": false,
+            "ap1ID": 1730748582525,
+            "ap2ID": 1730748650795
+        },
+        {
+            "ap1Name": "result",
+            "ap2Name": "xDist",
+            "ap2Primary": false,
+            "ap1ID": 1730748650795,
+            "ap2ID": 1730472281297
         }
     ],
     "unitsKey": "Inches",
