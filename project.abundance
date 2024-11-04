@@ -1420,8 +1420,8 @@
         {
             "atomType": "CutLayout",
             "name": "Cut Layout",
-            "x": 0.8063410454155956,
-            "y": 0.27405247813411077,
+            "x": 0.7977720651242503,
+            "y": 0.2944606413994169,
             "uniqueID": 1730472340021,
             "ioValues": [
                 {
@@ -1442,11 +1442,11 @@
                 },
                 {
                     "name": "Part Padding",
-                    "ioValue": 0.25
+                    "ioValue": 1
                 },
                 {
                     "name": "Sheet Padding",
-                    "ioValue": 3
+                    "ioValue": 2
                 }
             ],
             "description": "Extracts all parts tagged for cutting and lays them out on a sheet to cut."
@@ -1454,8 +1454,8 @@
         {
             "atomType": "Molecule",
             "name": "seat ",
-            "x": 0.23393316195372751,
-            "y": 0.5714285714285714,
+            "x": 0.2373607540702656,
+            "y": 0.5626822157434402,
             "uniqueID": 1730472451612,
             "ioValues": [
                 {
@@ -2077,7 +2077,7 @@
                         },
                         {
                             "name": "wood thick",
-                            "ioValue": 10
+                            "ioValue": 0.75
                         },
                         {
                             "name": "seat width",
@@ -2186,7 +2186,7 @@
                             "ioValues": [
                                 {
                                     "name": "geometry",
-                                    "ioValue": 1730756724285
+                                    "ioValue": 1730758118540
                                 },
                                 {
                                     "name": "height",
@@ -2343,8 +2343,8 @@
                         {
                             "atomType": "GitHubMolecule",
                             "name": "Rounded-rectangle-",
-                            "x": 0.20051413881748073,
-                            "y": 0.5626822157434402,
+                            "x": 0.194515852613539,
+                            "y": 0.5714285714285714,
                             "uniqueID": 1730756724285,
                             "ioValues": [
                                 {
@@ -2483,9 +2483,35 @@
                             "unitsKey": "Inches",
                             "fileTypeVersion": 1,
                             "compiledBom": []
+                        },
+                        {
+                            "atomType": "Tag",
+                            "name": ",cutLayout",
+                            "x": 0.2819194515852614,
+                            "y": 0.8542274052478134,
+                            "uniqueID": 1730758118540,
+                            "ioValues": [
+                                {
+                                    "name": "geometry",
+                                    "ioValue": 1730756724285
+                                }
+                            ],
+                            "description": "Tags geometry so that it can be extracted later.",
+                            "tags": [
+                                "",
+                                "cutLayout"
+                            ],
+                            "cutTag": true
                         }
                     ],
                     "allConnectors": [
+                        {
+                            "ap1Name": "number or geometry",
+                            "ap2Name": "height",
+                            "ap2Primary": false,
+                            "ap1ID": 1730756675037,
+                            "ap2ID": 1730756682869
+                        },
                         {
                             "ap1Name": "geometry",
                             "ap2Name": "geometry",
@@ -2568,6 +2594,13 @@
                             "ap2Name": "geometry",
                             "ap2Primary": true,
                             "ap1ID": 1730756724285,
+                            "ap2ID": 1730758118540
+                        },
+                        {
+                            "ap1Name": "geometry",
+                            "ap2Name": "geometry",
+                            "ap2Primary": true,
+                            "ap1ID": 1730758118540,
                             "ap2ID": 1730756682869
                         }
                     ],
@@ -2608,6 +2641,13 @@
                     "ap2Primary": false,
                     "ap1ID": 1730472451649,
                     "ap2ID": 1730490439040
+                },
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "wood thick",
+                    "ap2Primary": false,
+                    "ap1ID": 1730472451649,
+                    "ap2ID": 1730756675402
                 },
                 {
                     "ap1Name": "Geometry",
@@ -2691,8 +2731,8 @@
         {
             "atomType": "Molecule",
             "name": "back",
-            "x": 0.25621251071122536,
-            "y": 0.8104956268221574,
+            "x": 0.25449871465295626,
+            "y": 0.8134110787172012,
             "uniqueID": 1730492058234,
             "ioValues": [
                 {
@@ -3462,7 +3502,7 @@
                     "ioValues": [
                         {
                             "name": "geometry",
-                            "ioValue": 1730751142638
+                            "ioValue": 1730758058139
                         },
                         {
                             "name": "height",
@@ -3667,6 +3707,25 @@
                         }
                     ],
                     "description": "Moves a shape laterally in X, Y, Z."
+                },
+                {
+                    "atomType": "Tag",
+                    "name": "cutLayout,",
+                    "x": 0.27849185946872324,
+                    "y": 0.3819241982507289,
+                    "uniqueID": 1730758058139,
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": 1730751142638
+                        }
+                    ],
+                    "description": "Tags geometry so that it can be extracted later.",
+                    "tags": [
+                        "cutLayout",
+                        ""
+                    ],
+                    "cutTag": true
                 }
             ],
             "allConnectors": [
@@ -3696,7 +3755,7 @@
                     "ap2Name": "geometry",
                     "ap2Primary": true,
                     "ap1ID": 1730751142638,
-                    "ap2ID": 1730751491231
+                    "ap2ID": 1730758058139
                 },
                 {
                     "ap1Name": "geometry",
@@ -3795,6 +3854,13 @@
                     "ap2Primary": false,
                     "ap1ID": 1730756602317,
                     "ap2ID": 1730751385720
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
+                    "ap1ID": 1730758058139,
+                    "ap2ID": 1730751491231
                 }
             ],
             "fileTypeVersion": 1,
