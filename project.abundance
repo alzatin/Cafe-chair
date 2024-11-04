@@ -16,6 +16,10 @@
         {
             "name": "seat width",
             "ioValue": 15
+        },
+        {
+            "name": "seat height",
+            "ioValue": 21
         }
     ],
     "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -48,7 +52,7 @@
             "atomType": "Molecule",
             "name": "back side leg",
             "x": 0.24078834618680375,
-            "y": 0.22448979591836737,
+            "y": 0.21574344023323616,
             "uniqueID": 1730469146402,
             "ioValues": [
                 {
@@ -565,8 +569,8 @@
                 {
                     "atomType": "Move",
                     "name": "Move",
-                    "x": 0.4301628106255355,
-                    "y": 0.7405247813411079,
+                    "x": 0.429305912596401,
+                    "y": 0.7026239067055393,
                     "uniqueID": 1730470732762,
                     "ioValues": [
                         {
@@ -575,11 +579,11 @@
                         },
                         {
                             "name": "xDist",
-                            "ioValue": -8
+                            "ioValue": -9.25
                         },
                         {
                             "name": "yDist",
-                            "ioValue": 12
+                            "ioValue": 11
                         },
                         {
                             "name": "zDist",
@@ -829,8 +833,8 @@
                 {
                     "atomType": "Join",
                     "name": "Fusion",
-                    "x": 0.805484147386461,
-                    "y": 0.7580174927113703,
+                    "x": 0.8003427592116538,
+                    "y": 0.7521865889212829,
                     "uniqueID": 1730748250087,
                     "ioValues": [
                         {
@@ -1142,7 +1146,7 @@
                 },
                 {
                     "name": "xDist",
-                    "ioValue": 15.365
+                    "ioValue": 15.275
                 },
                 {
                     "name": "yDist",
@@ -1876,8 +1880,8 @@
         {
             "atomType": "Move",
             "name": "Move",
-            "x": 0.4121679520137103,
-            "y": 0.6501457725947521,
+            "x": 0.40616966580976865,
+            "y": 0.6705539358600583,
             "uniqueID": 1730490978325,
             "ioValues": [
                 {
@@ -2464,8 +2468,8 @@
         {
             "atomType": "Move",
             "name": "Move",
-            "x": 0.5569837189374465,
-            "y": 0.7871720116618076,
+            "x": 0.5646958011996572,
+            "y": 0.7638483965014577,
             "uniqueID": 1730492101818,
             "ioValues": [
                 {
@@ -2524,9 +2528,9 @@
         },
         {
             "atomType": "Equation",
-            "name": "x + y/2 -.01",
-            "x": 0.26049700085689803,
-            "y": 0.4227405247813411,
+            "name": "x + y/2 -.1",
+            "x": 0.26306769494430166,
+            "y": 0.4314868804664723,
             "uniqueID": 1730748650795,
             "ioValues": [
                 {
@@ -2539,7 +2543,16 @@
                 }
             ],
             "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
-            "currentEquation": "x + y/2 -.01"
+            "currentEquation": "x + y/2 -.1"
+        },
+        {
+            "atomType": "Input",
+            "name": "seat height",
+            "x": 0.04,
+            "y": 0.9037900874635568,
+            "uniqueID": 1730748799905,
+            "ioValues": [],
+            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable"
         }
     ],
     "allConnectors": [
@@ -2647,6 +2660,13 @@
             "ap2Primary": false,
             "ap1ID": 1730748650795,
             "ap2ID": 1730472281297
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "zDist",
+            "ap2Primary": false,
+            "ap1ID": 1730748799905,
+            "ap2ID": 1730490978325
         }
     ],
     "unitsKey": "Inches",
