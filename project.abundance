@@ -11,15 +11,15 @@
         },
         {
             "name": "wood thick",
-            "ioValue": 0.75
+            "ioValue": 10
         },
         {
             "name": "seat width",
-            "ioValue": 15
+            "ioValue": 10
         },
         {
             "name": "seat height",
-            "ioValue": 21
+            "ioValue": 10
         }
     ],
     "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -61,7 +61,7 @@
                 },
                 {
                     "name": "wood thick",
-                    "ioValue": 0.75
+                    "ioValue": 10
                 }
             ],
             "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -1464,11 +1464,11 @@
                 },
                 {
                     "name": "wood thick",
-                    "ioValue": 0.75
+                    "ioValue": 10
                 },
                 {
                     "name": "seat width",
-                    "ioValue": 15
+                    "ioValue": 10
                 }
             ],
             "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -1519,11 +1519,11 @@
                         },
                         {
                             "name": "wood thick",
-                            "ioValue": 0.75
+                            "ioValue": 10
                         },
                         {
                             "name": "seat width",
-                            "ioValue": 15
+                            "ioValue": 10
                         }
                     ],
                     "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -2077,7 +2077,7 @@
                         },
                         {
                             "name": "wood thick",
-                            "ioValue": 0.75
+                            "ioValue": 10
                         },
                         {
                             "name": "seat width",
@@ -2349,15 +2349,15 @@
                             "ioValues": [
                                 {
                                     "name": "width",
-                                    "ioValue": 4.5
+                                    "ioValue": 10
                                 },
                                 {
                                     "name": "depth",
-                                    "ioValue": 15
+                                    "ioValue": 10
                                 },
                                 {
                                     "name": "corner radius",
-                                    "ioValue": 1
+                                    "ioValue": 10
                                 }
                             ],
                             "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -2741,7 +2741,7 @@
                 },
                 {
                     "name": "wood thick",
-                    "ioValue": 0.75
+                    "ioValue": 10
                 }
             ],
             "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -2792,7 +2792,7 @@
                         },
                         {
                             "name": "wood thick",
-                            "ioValue": 0.75
+                            "ioValue": 10
                         }
                     ],
                     "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -3286,7 +3286,7 @@
                     "ioValues": [
                         {
                             "name": "width",
-                            "ioValue": 4.5
+                            "ioValue": 10
                         },
                         {
                             "name": "depth",
@@ -3294,7 +3294,7 @@
                         },
                         {
                             "name": "corner radius",
-                            "ioValue": 1
+                            "ioValue": 10
                         }
                     ],
                     "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
