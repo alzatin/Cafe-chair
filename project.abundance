@@ -19,7 +19,7 @@
         },
         {
             "name": "seat height",
-            "ioValue": 25
+            "ioValue": 18
         }
     ],
     "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -1464,7 +1464,7 @@
                 },
                 {
                     "name": "wood thick",
-                    "ioValue": 10
+                    "ioValue": 1
                 },
                 {
                     "name": "seat width",
@@ -1501,7 +1501,7 @@
                     "atomType": "Input",
                     "name": "wood thick",
                     "x": 0.04,
-                    "y": 0.6122448979591837,
+                    "y": 0.6151603498542274,
                     "uniqueID": 1730472451649,
                     "ioValues": [],
                     "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable"
@@ -1519,7 +1519,7 @@
                         },
                         {
                             "name": "wood thick",
-                            "ioValue": 10
+                            "ioValue": 1
                         },
                         {
                             "name": "seat width",
@@ -1841,7 +1841,7 @@
                                 },
                                 {
                                     "name": "height",
-                                    "ioValue": 10
+                                    "ioValue": 1
                                 }
                             ],
                             "description": "Extrudes a 2D shape. Input can be negitive. "
@@ -2077,7 +2077,7 @@
                         },
                         {
                             "name": "wood thick",
-                            "ioValue": 10
+                            "ioValue": 1
                         },
                         {
                             "name": "seat width",
@@ -2190,7 +2190,7 @@
                                 },
                                 {
                                     "name": "height",
-                                    "ioValue": 10
+                                    "ioValue": 1
                                 }
                             ],
                             "description": "Extrudes a 2D shape. Input can be negitive. "
@@ -2723,7 +2723,7 @@
                 },
                 {
                     "name": "zDist",
-                    "ioValue": 25
+                    "ioValue": 18
                 }
             ],
             "description": "Moves a shape laterally in X, Y, Z."
@@ -2731,8 +2731,8 @@
         {
             "atomType": "Molecule",
             "name": "back",
-            "x": 0.25449871465295626,
-            "y": 0.8134110787172012,
+            "x": 0.26026119402985076,
+            "y": 0.8104956268221574,
             "uniqueID": 1730492058234,
             "ioValues": [
                 {
@@ -2741,7 +2741,7 @@
                 },
                 {
                     "name": "wood thick",
-                    "ioValue": 10
+                    "ioValue": 1
                 }
             ],
             "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -2782,8 +2782,8 @@
                 {
                     "atomType": "Molecule",
                     "name": "back base",
-                    "x": 0.2262210796915167,
-                    "y": 0.20699708454810495,
+                    "x": 0.23227611940298507,
+                    "y": 0.22740524781341107,
                     "uniqueID": 1730492061025,
                     "ioValues": [
                         {
@@ -2792,7 +2792,7 @@
                         },
                         {
                             "name": "wood thick",
-                            "ioValue": 10
+                            "ioValue": 1
                         }
                     ],
                     "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -3110,7 +3110,7 @@
                                 },
                                 {
                                     "name": "height",
-                                    "ioValue": 10
+                                    "ioValue": 1
                                 }
                             ],
                             "description": "Extrudes a 2D shape. Input can be negitive. "
@@ -3506,7 +3506,7 @@
                         },
                         {
                             "name": "height",
-                            "ioValue": 10
+                            "ioValue": 1
                         }
                     ],
                     "description": "Extrudes a 2D shape. Input can be negitive. "
@@ -3735,6 +3735,13 @@
                     "ap2Primary": false,
                     "ap1ID": 1730492058301,
                     "ap2ID": 1730751491231
+                },
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "wood thick",
+                    "ap2Primary": false,
+                    "ap1ID": 1730492058301,
+                    "ap2ID": 1730492061025
                 },
                 {
                     "ap1Name": "Geometry",
@@ -3984,6 +3991,20 @@
             "ap2Primary": false,
             "ap1ID": 1730470361606,
             "ap2ID": 1730748650795
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "wood thick",
+            "ap2Primary": false,
+            "ap1ID": 1730470361606,
+            "ap2ID": 1730472451612
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "wood thick",
+            "ap2Primary": false,
+            "ap1ID": 1730470361606,
+            "ap2ID": 1730492058234
         },
         {
             "ap1Name": "geometry",
