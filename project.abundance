@@ -7,7 +7,7 @@
     "ioValues": [
         {
             "name": "Height",
-            "ioValue": 10
+            "ioValue": 30
         },
         {
             "name": "wood thick",
@@ -15,11 +15,11 @@
         },
         {
             "name": "seat width",
-            "ioValue": 10
+            "ioValue": 15
         },
         {
             "name": "seat height",
-            "ioValue": 10
+            "ioValue": 25
         }
     ],
     "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -31,7 +31,12 @@
             "x": 0.98,
             "y": 0.5,
             "uniqueID": 1730469095866,
-            "ioValues": [],
+            "ioValues": [
+                {
+                    "name": "number or geometry",
+                    "ioValue": 1730472292197
+                }
+            ],
             "description": "Connect geometry here to make it available in the next level up. "
         },
         {
@@ -1463,7 +1468,7 @@
                 },
                 {
                     "name": "seat width",
-                    "ioValue": 10
+                    "ioValue": 15
                 }
             ],
             "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -1475,7 +1480,12 @@
                     "x": 0.98,
                     "y": 0.5,
                     "uniqueID": 1730472451749,
-                    "ioValues": [],
+                    "ioValues": [
+                        {
+                            "name": "number or geometry",
+                            "ioValue": 1730490859945
+                        }
+                    ],
                     "description": "Connect geometry here to make it available in the next level up. "
                 },
                 {
@@ -1513,7 +1523,7 @@
                         },
                         {
                             "name": "seat width",
-                            "ioValue": 10
+                            "ioValue": 15
                         }
                     ],
                     "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -1578,7 +1588,7 @@
                             "ioValues": [
                                 {
                                     "name": "x length",
-                                    "ioValue": 10
+                                    "ioValue": 15
                                 },
                                 {
                                     "name": "y length",
@@ -2083,7 +2093,12 @@
                             "x": 0.98,
                             "y": 0.5,
                             "uniqueID": 1730756675106,
-                            "ioValues": [],
+                            "ioValues": [
+                                {
+                                    "name": "number or geometry",
+                                    "ioValue": 1730756683086
+                                }
+                            ],
                             "description": "Connect geometry here to make it available in the next level up. "
                         },
                         {
@@ -2328,21 +2343,21 @@
                         {
                             "atomType": "GitHubMolecule",
                             "name": "Rounded-rectangle-",
-                            "x": 0.18189509306260573,
-                            "y": 0.8104956268221574,
+                            "x": 0.18470149253731344,
+                            "y": 0.8017492711370262,
                             "uniqueID": 1730756724285,
                             "ioValues": [
                                 {
                                     "name": "width",
-                                    "ioValue": 10
+                                    "ioValue": 5
                                 },
                                 {
                                     "name": "depth",
-                                    "ioValue": 10
+                                    "ioValue": 15
                                 },
                                 {
                                     "name": "corner radius",
-                                    "ioValue": 10
+                                    "ioValue": 1
                                 }
                             ],
                             "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -2354,7 +2369,12 @@
                                     "x": 0.98,
                                     "y": 0.5,
                                     "uniqueID": 1730756724351,
-                                    "ioValues": [],
+                                    "ioValues": [
+                                        {
+                                            "name": "number or geometry",
+                                            "ioValue": 1730756725081
+                                        }
+                                    ],
                                     "description": "Connect geometry here to make it available in the next level up. "
                                 },
                                 {
@@ -2366,15 +2386,15 @@
                                     "ioValues": [
                                         {
                                             "name": "width",
-                                            "ioValue": 10
+                                            "ioValue": 5
                                         },
                                         {
                                             "name": "depth",
-                                            "ioValue": 10
+                                            "ioValue": 15
                                         },
                                         {
                                             "name": "cornerRadius",
-                                            "ioValue": 10
+                                            "ioValue": 1
                                         }
                                     ],
                                     "description": "Defines a Replicad code block.",
@@ -2703,7 +2723,7 @@
                 },
                 {
                     "name": "zDist",
-                    "ioValue": 21
+                    "ioValue": 25
                 }
             ],
             "description": "Moves a shape laterally in X, Y, Z."
@@ -2733,7 +2753,12 @@
                     "x": 0.98,
                     "y": 0.5,
                     "uniqueID": 1730492058303,
-                    "ioValues": [],
+                    "ioValues": [
+                        {
+                            "name": "number or geometry",
+                            "ioValue": 1730751385720
+                        }
+                    ],
                     "description": "Connect geometry here to make it available in the next level up. "
                 },
                 {
@@ -3255,21 +3280,21 @@
                 {
                     "atomType": "GitHubMolecule",
                     "name": "Rounded-rectangle-",
-                    "x": 0.155955441302485,
-                    "y": 0.47813411078717205,
+                    "x": 0.15951492537313433,
+                    "y": 0.5014577259475219,
                     "uniqueID": 1730751142638,
                     "ioValues": [
                         {
                             "name": "width",
-                            "ioValue": 10
+                            "ioValue": 5
                         },
                         {
                             "name": "depth",
-                            "ioValue": 10
+                            "ioValue": 15
                         },
                         {
                             "name": "corner radius",
-                            "ioValue": 10
+                            "ioValue": 1
                         }
                     ],
                     "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -3281,7 +3306,12 @@
                             "x": 0.98,
                             "y": 0.5,
                             "uniqueID": 1730751143355,
-                            "ioValues": [],
+                            "ioValues": [
+                                {
+                                    "name": "number or geometry",
+                                    "ioValue": 1730751142636
+                                }
+                            ],
                             "description": "Connect geometry here to make it available in the next level up. "
                         },
                         {
@@ -3293,15 +3323,15 @@
                             "ioValues": [
                                 {
                                     "name": "width",
-                                    "ioValue": 10
+                                    "ioValue": 5
                                 },
                                 {
                                     "name": "depth",
-                                    "ioValue": 10
+                                    "ioValue": 15
                                 },
                                 {
                                     "name": "cornerRadius",
-                                    "ioValue": 10
+                                    "ioValue": 1
                                 }
                             ],
                             "description": "Defines a Replicad code block.",
